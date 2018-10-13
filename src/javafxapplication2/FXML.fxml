@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="FXMLDocumentController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="710.0" style="-fx-background-color: SkyBlue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication2.FXMLDocumentController">
+   <children>
+      <FlowPane hgap="10.0" layoutX="31.0" layoutY="179.0" prefHeight="200.0" prefWidth="324.0" style="-fx-background-color: HotPink;" vgap="15.0">
+         <children>
+            <Label text="USERNAME:">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" promptText="Enter Username">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+               <FlowPane.margin>
+                  <Insets left="3.0" />
+               </FlowPane.margin>
+            </TextField>
+            <Label text="PASSWORD:">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Label>
+            <PasswordField fx:id="password" promptText="Enter Password">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </PasswordField>
+            <Button mnemonicParsing="false" onAction="#LoginButton" style="-fx-background-color: LimeGreen;" text="LOGIN">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+               <FlowPane.margin>
+                  <Insets left="120.0" top="20.0" />
+               </FlowPane.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets top="15.0" />
+         </padding>
+      </FlowPane>
+      <ImageView fx:id="devi" fitHeight="371.0" fitWidth="200.0" layoutX="479.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/devi.jpg" />
+         </image>
+      </ImageView>
+      <HBox layoutX="21.0" layoutY="24.0" prefHeight="100.0" prefWidth="677.0">
+         <children>
+            <Label style="-fx-padding: 20,0,0,45;" text="ARYA VYSYA IDENTITY FORUM-NARASARAOPET" textFill="PURPLE">
+               <font>
+                  <Font name="Britannic Bold" size="31.0" />
+               </font>
+               <effect>
+                  <Glow level="0.58" />
+               </effect>
+            </Label>
+         </children>
+      </HBox>
+      <Button layoutX="253.0" layoutY="386.0" mnemonicParsing="false" onAction="#ForgotButton" style="-fx-background-color: #999999;" text="ForgotPassword?" textFill="RED" />
+      <Label layoutX="21.0" layoutY="579.0" text="\@Copyrights -Designed &amp; Developed By VinayKurmadas" textFill="MAROON">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+   </children>
+</Pane>

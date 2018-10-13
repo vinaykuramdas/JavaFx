@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="588.0" prefWidth="651.0" style="-fx-background-color: SpringGreen;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication2.SelectController">
+   <children>
+      <VBox layoutX="31.0" layoutY="144.0" prefHeight="318.0" prefWidth="574.0">
+         <children>
+            <TableView fx:id="table" prefHeight="310.0" prefWidth="574.0">
+              <columns>
+                <TableColumn fx:id="Name" prefWidth="75.0" text="NAME" />
+                <TableColumn fx:id="Gotharm" prefWidth="75.0" text="GOTHRAM" />
+                  <TableColumn fx:id="fatherName" prefWidth="75.0" text="FATHER NAME" />
+                  <TableColumn fx:id="motherName" prefWidth="75.0" text="MOTHER NAME" />
+                  <TableColumn fx:id="mobile" prefWidth="75.0" text="MOBILE" />
+                  <TableColumn fx:id="newspaper" prefWidth="75.0" text="NEWSPAPER" />
+                  <TableColumn fx:id="profession" prefWidth="75.0" text="PROFESSION" />
+                  <TableColumn fx:id="surname" prefWidth="75.0" text="SURNAME" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+      <Label fx:id="personID" layoutX="65.0" layoutY="67.0" style="-fx-background-color: Gold;" text="Enter the Person Id you want to search:">
+         <font>
+            <Font name="System Italic" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ID" layoutX="368.0" layoutY="68.0" prefHeight="25.0" prefWidth="212.0" promptText="Enter the ID" />
+      <Button layoutX="297.0" layoutY="104.0" mnemonicParsing="false" onAction="#searchButton" style="-fx-background-color: Olive;" text="SEARCH" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="554.0" layoutY="542.0" mnemonicParsing="false" onAction="#backButton" style="-fx-background-color: Crimson;" text="Back" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

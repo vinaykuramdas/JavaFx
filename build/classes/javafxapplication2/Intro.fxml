@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication2.IntroController">
+   <children>
+      <AnchorPane layoutY="-6.0" prefHeight="583.0" prefWidth="674.0" style="-fx-background-color: SlateGrey;">
+         <children>
+            <Button layoutX="51.0" layoutY="162.0" mnemonicParsing="false" onAction="#submitButton" style="-fx-background-color: Gold;" text="Select Person">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="207.0" layoutY="162.0" mnemonicParsing="false" onAction="#addButton" style="-fx-background-color: green;" text="Add Person">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="340.0" layoutY="162.0" mnemonicParsing="false" onAction="#updateButton" style="-fx-background-color: Aquamarine;" text="Update Person">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="490.0" layoutY="162.0" mnemonicParsing="false" onAction="#deleteButton" style="-fx-background-color: red;" text="Delete Person">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="65.0" layoutY="86.0" text="Please Select the Resepective Button for Desired Operation" textFill="GREENYELLOW">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="37.0" layoutY="524.0" mnemonicParsing="false" onAction="#backButton" style="-fx-background-color: Crimson;" text="LogOut" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

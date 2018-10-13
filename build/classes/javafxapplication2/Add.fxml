@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="617.0" prefWidth="651.0" style="-fx-background-color: lightBlue;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication2.AddController">
+   <children>
+      <Label layoutX="28.0" layoutY="38.0" text="GOTHRAM:" />
+      <Label layoutX="36.0" layoutY="61.0" />
+      <Label layoutX="29.0" layoutY="70.0" text="SURNAME:" />
+      <Label layoutX="36.0" layoutY="104.0" text="NAME:" />
+      <Label layoutX="14.0" layoutY="138.0" text="FATHER NAME:" />
+      <Label layoutX="11.0" layoutY="181.0" text="MOTHER NAME:" />
+      <Label layoutX="14.0" layoutY="244.0" text="CHILDREN(MALE):" />
+      <TextField fx:id="gothram" layoutX="141.0" layoutY="34.0" />
+      <TextField fx:id="surname" layoutX="141.0" layoutY="66.0" />
+      <TextField fx:id="name" layoutX="141.0" layoutY="100.0" />
+      <TextField fx:id="fathername" layoutX="141.0" layoutY="134.0" />
+      <TextField fx:id="mothername" layoutX="141.0" layoutY="177.0" />
+      <TextField fx:id="child_male1" layoutX="141.0" layoutY="227.0" />
+      <TextField fx:id="child_male2" layoutX="141.0" layoutY="261.0" />
+      <Label layoutX="14.0" layoutY="313.0" text="CHILDREN(FEMALE):" />
+      <TextField fx:id="child_female1" layoutX="141.0" layoutY="296.0" />
+      <TextField fx:id="child_female2" layoutX="141.0" layoutY="333.0" />
+      <Label layoutX="310.0" layoutY="38.0" text="HOUSE:" />
+      <RadioButton fx:id="house_yes" layoutX="390.0" layoutY="38.0" mnemonicParsing="false" text="YES" />
+      <RadioButton fx:id="ration_no" layoutX="468.0" layoutY="70.0" mnemonicParsing="false" text="NO" />
+      <Label layoutX="19.0" layoutY="373.0" text="PROFESSION:" />
+      <TextField fx:id="profession" layoutX="141.0" layoutY="369.0" />
+      <Label layoutX="310.0" layoutY="70.0" text="RATION:" />
+      <Label layoutX="310.0" layoutY="104.0" text="AADHAR:" />
+      <Label layoutX="310.0" layoutY="138.0" text="VOTER:" />
+      <RadioButton fx:id="ration_yes" layoutX="390.0" layoutY="70.0" mnemonicParsing="false" text="YES" />
+      <RadioButton fx:id="aadhar_yes" layoutX="390.0" layoutY="104.0" mnemonicParsing="false" text="YES" />
+      <RadioButton fx:id="voter_yes" layoutX="390.0" layoutY="138.0" mnemonicParsing="false" text="YES" />
+      <RadioButton fx:id="house_no" layoutX="468.0" layoutY="38.0" mnemonicParsing="false" text="NO" />
+      <RadioButton fx:id="aadhar_no" layoutX="468.0" layoutY="104.0" mnemonicParsing="false" text="NO" />
+      <RadioButton fx:id="voter_no" layoutX="468.0" layoutY="138.0" mnemonicParsing="false" text="NO" />
+      <Label layoutX="19.0" layoutY="408.0" text="NEWSPAPER:" />
+      <Label layoutX="26.0" layoutY="445.0" text="MOBILE:" />
+      <Label layoutX="20.0" layoutY="473.0" text="LANDLINE:" />
+      <Label layoutX="21.0" layoutY="505.0" text="RECEIPT NO:" />
+      <Label layoutX="2.0" layoutY="548.0" text="PERMENANT RECEIPT NO:" />
+      <TextField fx:id="newspaper" layoutX="141.0" layoutY="404.0" />
+      <TextField fx:id="mobile" layoutX="141.0" layoutY="441.0" />
+      <TextField fx:id="landline" layoutX="141.0" layoutY="469.0" />
+      <TextField fx:id="receiptno" layoutX="141.0" layoutY="501.0" />
+      <TextField fx:id="p_receiptno" layoutX="141.0" layoutY="544.0" />
+      <Label layoutX="8.0" layoutY="579.0" text="MUNCIPAL WARD NO:" />
+      <TextField fx:id="municipalward" layoutX="141.0" layoutY="575.0" />
+      <Label layoutX="310.0" layoutY="169.0" text="GAS:" />
+      <Label layoutX="310.0" layoutY="194.0" text="TAP:" />
+      <Label layoutX="310.0" layoutY="219.0" text="BANK_ACC:" />
+      <RadioButton fx:id="gas_yes" layoutX="390.0" layoutY="169.0" mnemonicParsing="false" text="YES" />
+      <RadioButton fx:id="tap_yes" layoutX="390.0" layoutY="194.0" mnemonicParsing="false" text="YES" />
+      <RadioButton fx:id="bank_acc_yes" layoutX="390.0" layoutY="219.0" mnemonicParsing="false" text="YES" />
+      <RadioButton fx:id="gas_no" layoutX="468.0" layoutY="169.0" mnemonicParsing="false" text="NO" />
+      <RadioButton fx:id="tap_no" layoutX="468.0" layoutY="194.0" mnemonicParsing="false" text="NO" />
+      <RadioButton fx:id="bank_acc_no" layoutX="468.0" layoutY="219.0" mnemonicParsing="false" text="NO" />
+      <Label layoutX="310.0" layoutY="264.0" text="ADDRESS:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="316.0" layoutY="300.0" text="A-NAME:" />
+      <Label layoutX="316.0" layoutY="334.0" text="DOOR_NO:" />
+      <Label layoutX="317.0" layoutY="361.0" text="STREET:" />
+      <Label layoutX="317.0" layoutY="400.0" text="LANDMARK:" />
+      <Label layoutX="316.0" layoutY="446.0" text="VILLAGE:" />
+      <Label layoutX="319.0" layoutY="486.0" text="DISTRICT:" />
+      <Label layoutX="323.0" layoutY="518.0" text="STATE:" />
+      <Label layoutX="421.0" layoutY="446.0" text="NARASARAOPET">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="431.0" layoutY="486.0" text="GUNTUR">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="421.0" layoutY="517.0" text="ANDHRAPRADESH">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="add_name" layoutX="404.0" layoutY="296.0" />
+      <TextField fx:id="door_no" layoutX="404.0" layoutY="330.0" />
+      <TextField fx:id="street" layoutX="404.0" layoutY="357.0" />
+      <TextField fx:id="landmark" layoutX="404.0" layoutY="391.0" />
+      <Button layoutX="546.0" layoutY="567.0" mnemonicParsing="false" onAction="#backButton" style="-fx-background-color: Crimson; -fx-background-image: url(..\Images\devi.jpg);" text="Back" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="431.0" layoutY="568.0" mnemonicParsing="false" onAction="#addButton" style="-fx-background-color: green;" text="ADD VOTER" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
