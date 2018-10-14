@@ -31,7 +31,7 @@
          </font>
       </Label>
       <TextField fx:id="ID" layoutX="368.0" layoutY="68.0" prefHeight="25.0" prefWidth="212.0" promptText="Enter the ID" />
-      <Button layoutX="297.0" layoutY="104.0" mnemonicParsing="false" onAction="#searchButton" style="-fx-background-color: Olive;" text="SEARCH" textFill="WHITE">
+      <Button layoutX="191.0" layoutY="107.0" mnemonicParsing="false" onAction="#searchButton" style="-fx-background-color: Olive;" text="SEARCH" textFill="WHITE">
          <font>
             <Font size="14.0" />
          </font>
@@ -41,5 +41,6 @@
             <Font size="14.0" />
          </font>
       </Button>
+      <Button layoutX="379.0" layoutY="110.0" mnemonicParsing="false" onAction="#searchAll" style="-fx-background-color: blue;" text="SEARCH ALL" textFill="WHITE" />
    </children>
 </AnchorPane>

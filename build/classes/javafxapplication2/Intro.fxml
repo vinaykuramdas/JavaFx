@@ -9,7 +9,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication2.IntroController">
    <children>
-      <AnchorPane layoutY="-6.0" prefHeight="583.0" prefWidth="674.0" style="-fx-background-color: SlateGrey;">
+      <AnchorPane layoutY="-6.0" prefHeight="583.0" prefWidth="674.0" style="-fx-background-color: magenta;">
          <children>
             <Button layoutX="51.0" layoutY="162.0" mnemonicParsing="false" onAction="#submitButton" style="-fx-background-color: Gold;" text="Select Person">
                <font>

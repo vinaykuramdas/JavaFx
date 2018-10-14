@@ -12,14 +12,14 @@
       <Label layoutX="24.0" layoutY="108.0" text="GOTHRAM:" />
       <Label layoutX="36.0" layoutY="61.0" />
       <Label layoutX="365.0" layoutY="108.0" text="SURNAME:" />
-      <Label layoutX="47.0" layoutY="56.0" text="Enter the NAME to be updated:">
+      <Label layoutX="8.0" layoutY="56.0" text="Enter the NAME to be updated:">
          <font>
             <Font name="System Bold" size="18.0" />
          </font></Label>
       <Label layoutX="14.0" layoutY="138.0" text="FATHER NAME:" />
       <Label layoutX="11.0" layoutY="181.0" text="MOTHER NAME:" />
       <Label layoutX="14.0" layoutY="244.0" text="CHILDREN(MALE):" />
-      <TextField fx:id="name" layoutX="340.0" layoutY="57.0" prefHeight="25.0" prefWidth="274.0" promptText="Please enter the Name" />
+      <TextField fx:id="name" layoutX="298.0" layoutY="57.0" prefHeight="25.0" prefWidth="274.0" promptText="Please enter the Name" />
       <TextField fx:id="gothram" layoutX="141.0" layoutY="104.0" />
       <TextField fx:id="surname" layoutX="472.0" layoutY="104.0" />
       <TextField fx:id="fathername" layoutX="141.0" layoutY="134.0" />
@@ -87,5 +87,6 @@
             <Font size="14.0" />
          </font>
       </Button>
+      <Button layoutX="578.0" layoutY="57.0" mnemonicParsing="false" onAction="#getDetails" style="-fx-background-color: Lime;" text="GetDetails" />
    </children>
 </AnchorPane>

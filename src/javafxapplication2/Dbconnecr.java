@@ -26,7 +26,7 @@ public class Dbconnecr {
   public static void dbConnect(){
       try{
       Class.forName("org.postgresql.Driver");
-    Connection conn =  DriverManager.getConnection(url, user, password);
+     conn =  DriverManager.getConnection(url, user, password);
           JOptionPane.showMessageDialog(null, "connected");
    
       }

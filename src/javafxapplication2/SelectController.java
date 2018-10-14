@@ -13,6 +13,7 @@ import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import static javafx.application.Application.launch;
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -70,8 +71,26 @@ public class SelectController implements Initializable {
      */
     
      @FXML
-    private void searchButton(ActionEvent e){
+    private void searchButton(ActionEvent e) throws SQLException, ClassNotFoundException{
         System.out.println("Search button");
+        data = FXCollections.observableArrayList();
+        Voter vote = new Voter();
+        
+      vote =  VoterDAO.searchVoter(ID.getText());
+        data.add(vote);
+        table.setItems(data);
+        
+    }
+    
+    @FXML
+    private void searchAll(ActionEvent e) throws SQLException, ClassNotFoundException{
+        System.out.println("Search button");
+        data = FXCollections.observableArrayList();
+        Voter vote = new Voter();
+        
+      data =  VoterDAO.searchVoters();
+        table.setItems(data);
+         
     }
     @FXML
     private void backButton(ActionEvent e) throws IOException{
@@ -91,8 +110,8 @@ public class SelectController implements Initializable {
         
         Name.setCellValueFactory(new PropertyValueFactory<Voter,String>("name"));
         Gotharm.setCellValueFactory(new PropertyValueFactory<Voter,String>("gothram"));
-        fatherName.setCellValueFactory(new PropertyValueFactory<Voter,String>("fathername"));
-        motherName.setCellValueFactory(new PropertyValueFactory<Voter,String>("mothername"));
+        fatherName.setCellValueFactory(new PropertyValueFactory<Voter,String>("fatherName"));
+        motherName.setCellValueFactory(new PropertyValueFactory<Voter,String>("motherName"));
         mobile.setCellValueFactory(new PropertyValueFactory<Voter,String>("mobile"));
         newspaper.setCellValueFactory(new PropertyValueFactory<Voter,String>("newspaper"));
         profession.setCellValueFactory(new PropertyValueFactory<Voter,String>("profession"));

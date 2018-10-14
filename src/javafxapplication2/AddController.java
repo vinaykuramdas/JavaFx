@@ -102,6 +102,24 @@ public class AddController implements Initializable {
     private RadioButton ration_yes;
     @FXML
     private RadioButton ration_no;
+    
+    @FXML
+    private ToggleGroup house;
+    @FXML
+    private ToggleGroup voter;
+    @FXML
+    private ToggleGroup aadhar;
+    @FXML
+    private ToggleGroup gas;
+    @FXML
+    private ToggleGroup tap;
+    @FXML
+    private ToggleGroup bank;
+    @FXML
+    private ToggleGroup ration;
+            
+            
+            
             
     @FXML
     private void backButton(ActionEvent e){
@@ -120,44 +138,38 @@ public class AddController implements Initializable {
         }
     }
     
-    @FXML
-    private void addButton(ActionEvent e) throws SQLException, ClassNotFoundException{
-        VoterDAO.insertVoter(name.getText(), surname.getText(), gothram.getText());
-        Alert add = new Alert(Alert.AlertType.INFORMATION);
-        add.setContentText("Voter added successfully");
-        add.showAndWait();
-    }
+   
    
             
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    ToggleGroup house = new ToggleGroup();
+        house = new ToggleGroup();
     house_yes.setToggleGroup(house);
     house_no.setToggleGroup(house);
     
-    ToggleGroup ration = new ToggleGroup();
+    ration = new ToggleGroup();
     ration_yes.setToggleGroup(ration);
     ration_no.setToggleGroup(ration);
     
-    ToggleGroup voter = new ToggleGroup();
+   voter = new ToggleGroup();
     voter_yes.setToggleGroup(voter);
     voter_no.setToggleGroup(voter);
     
-    ToggleGroup aadhar = new ToggleGroup();
+   aadhar = new ToggleGroup();
     aadhar_yes.setToggleGroup(aadhar);
     aadhar_no.setToggleGroup(aadhar);
     
-    ToggleGroup gas = new ToggleGroup();
+    gas = new ToggleGroup();
     gas_yes.setToggleGroup(gas);
     gas_no.setToggleGroup(gas);
     
-    ToggleGroup tap = new ToggleGroup();
+    tap = new ToggleGroup();
     tap_yes.setToggleGroup(tap);
     tap_no.setToggleGroup(tap);
     
-    ToggleGroup bank = new ToggleGroup();
+    bank = new ToggleGroup();
     bank_acc_yes.setToggleGroup(bank);
     bank_acc_no.setToggleGroup(bank);
             
@@ -166,5 +178,31 @@ public class AddController implements Initializable {
             
     
     }    
+    
+    
+     @FXML
+    private void addButton(ActionEvent e) throws SQLException, ClassNotFoundException{
+        RadioButton h_chk = (RadioButton) house.getSelectedToggle();
+        RadioButton r_chk = (RadioButton) ration.getSelectedToggle();
+        RadioButton a_chk = (RadioButton) aadhar.getSelectedToggle();
+        RadioButton v_chk = (RadioButton) voter.getSelectedToggle();
+        RadioButton g_chk = (RadioButton) gas.getSelectedToggle();
+        RadioButton t_chk = (RadioButton) tap.getSelectedToggle();
+        RadioButton b_chk = (RadioButton) bank.getSelectedToggle();
+        
+        VoterDAO.insertVoter(name.getText(), surname.getText(), gothram.getText(),fathername.getText(),mothername.getText(),child_male1.getText(),child_male2.getText(),child_female1.getText(),child_female2.getText(),
+                             newspaper.getText(),profession.getText(),mobile.getText(),landline.getText(),receiptno.getText(),p_receiptno.getText(),municipalward.getText(),add_name.getText(),door_no.getText(),street.getText(),landmark.getText()
+                             ,h_chk.getText(),r_chk.getText(),a_chk.getText(),v_chk.getText(),g_chk.getText(),t_chk.getText(),b_chk.getText()
+                             );
+        Alert add = new Alert(Alert.AlertType.INFORMATION);
+        add.setContentText("Voter added successfully");
+        add.showAndWait();
+        
+        name.setText(""); surname.setText(""); gothram.setText("");fathername.setText("");mothername.setText("");child_male1.setText("");child_male2.setText("");child_female1.setText("");child_female2.setText("");
+                             newspaper.setText("");profession.setText("");mobile.setText("");landline.setText("");receiptno.setText("");p_receiptno.setText("");municipalward.setText("");add_name.setText("");door_no.setText("");street.setText("");landmark.setText("");
+                             h_chk.setText("");r_chk.setText("");a_chk.setText("");v_chk.setText("");g_chk.setText("");t_chk.setText("");b_chk.setText("");
+                             
+        
+    }
     
 }

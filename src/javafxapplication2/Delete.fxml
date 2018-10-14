@@ -7,7 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="569.0" prefWidth="635.0" style="-fx-background-color: OldLace;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication2.DeleteController">
+<AnchorPane id="AnchorPane" prefHeight="569.0" prefWidth="635.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication2.DeleteController">
    <children>
       <Label fx:id="deleteId" layoutX="42.0" layoutY="90.0" text="Enter the Id to be Deleted:" textFill="ORANGERED">
          <font>
