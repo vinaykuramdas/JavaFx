@@ -155,6 +155,9 @@ public class UpdateController implements Initializable {
              name.setText(""); surname.setText(""); gothram.setText("");fathername.setText("");mothername.setText("");child_male1.setText("");child_male2.setText("");child_female1.setText("");child_female2.setText("");
                              newspaper.setText("");profession.setText("");mobile.setText("");landline.setText("");receiptno.setText("");p_receiptno.setText("");municipalward.setText("");add_name.setText("");door_no.setText("");street.setText("");landmark.setText("");
                              h_chk.setText("");r_chk.setText("");a_chk.setText("");v_chk.setText("");g_chk.setText("");t_chk.setText("");b_chk.setText("");
+                             house_yes.setSelected(false);house_no.setSelected(false);aadhar_yes.setSelected(false);aadhar_no.setSelected(false);
+                             voter_yes.setSelected(false);voter_no.setSelected(false);ration_yes.setSelected(false);ration_no.setSelected(false);
+                             gas_yes.setSelected(false);gas_no.setSelected(false);tap_yes.setSelected(false);tap_no.setSelected(false);bank_acc_yes.setSelected(false);bank_acc_no.setSelected(false);
             }
            
         }catch(Exception ex){
