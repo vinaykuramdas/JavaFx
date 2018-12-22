@@ -12,7 +12,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import static javafx.application.Application.launch;
-import javax.swing.JOptionPane;
+import javafx.scene.control.Alert;
+
 
 /**
  *
@@ -27,8 +28,8 @@ public class Dbconnecr {
       try{
       Class.forName("org.postgresql.Driver");
      conn =  DriverManager.getConnection(url, user, password);
-          JOptionPane.showMessageDialog(null, "connected to DB");
-   
+        Alert dbconn = new Alert(Alert.AlertType.INFORMATION);
+        dbconn.setContentText("Connected to DB");
       }
       catch(Exception ex){
           ex.printStackTrace();

@@ -68,13 +68,13 @@
                   <Font name="Britannic Bold" size="31.0" />
                </font>
                <effect>
-                  <Glow level="0.58" />
+                  <Glow level="0.88" />
                </effect>
             </Label>
          </children>
       </HBox>
       <Button layoutX="253.0" layoutY="386.0" mnemonicParsing="false" onAction="#ForgotButton" style="-fx-background-color: #999999;" text="ForgotPassword?" textFill="RED" />
-      <Label layoutX="21.0" layoutY="579.0" text="\@Copyrights -Designed &amp; Developed By VinayKurmadas" textFill="MAROON">
+      <Label layoutX="21.0" layoutY="579.0" text="Copyrights © -Designed &amp; Developed By VinayKurmadas" textFill="MAROON" underline="true">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font></Label>

@@ -14,13 +14,21 @@
             <TableView fx:id="table" prefHeight="310.0" prefWidth="574.0">
               <columns>
                 <TableColumn fx:id="Name" prefWidth="75.0" text="NAME" />
+                <TableColumn fx:id="surname" prefWidth="75.0" text="SURNAME" />
                 <TableColumn fx:id="Gotharm" prefWidth="75.0" text="GOTHRAM" />
                   <TableColumn fx:id="fatherName" prefWidth="75.0" text="FATHER NAME" />
                   <TableColumn fx:id="motherName" prefWidth="75.0" text="MOTHER NAME" />
                   <TableColumn fx:id="mobile" prefWidth="75.0" text="MOBILE" />
                   <TableColumn fx:id="newspaper" prefWidth="75.0" text="NEWSPAPER" />
                   <TableColumn fx:id="profession" prefWidth="75.0" text="PROFESSION" />
-                  <TableColumn fx:id="surname" prefWidth="75.0" text="SURNAME" />
+                   <TableColumn fx:id="childmale1" prefWidth="75.0" text="MALE1" />
+                <TableColumn fx:id="childmale2" prefWidth="75.0" text="MALE2" />
+                  <TableColumn fx:id="childfemale1" prefWidth="75.0" text="FEMALE1" />
+                  <TableColumn fx:id="childfemale2" prefWidth="75.0" text="FEMALE2" />
+                  <TableColumn fx:id="receipt" prefWidth="75.0" text="RECEIPTNO" />
+                  <TableColumn fx:id="address" prefWidth="75.0" text="ADDRESS" />
+                  <TableColumn fx:id="sreeet" prefWidth="75.0" text="STREET" />
+                  <TableColumn fx:id="landmark" prefWidth="75.0" text="LANDMARK" />
               </columns>
             </TableView>
          </children>
@@ -42,5 +50,10 @@
          </font>
       </Button>
       <Button layoutX="379.0" layoutY="110.0" mnemonicParsing="false" onAction="#searchAll" style="-fx-background-color: blue;" text="SEARCH ALL" textFill="WHITE" />
+      <Button layoutX="474.0" layoutY="542.0" mnemonicParsing="false" onAction="#printButton" style="-fx-background-color: green;" text="PRINT" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

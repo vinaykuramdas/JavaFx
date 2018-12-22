@@ -5,6 +5,7 @@
  */
 package javafxapplication2;
 
+import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
@@ -12,6 +13,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.print.PrinterJob;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -118,7 +120,7 @@ public class AddController implements Initializable {
     @FXML
     private ToggleGroup ration;
             
-            
+          
             
             
     @FXML
@@ -139,7 +141,22 @@ public class AddController implements Initializable {
     }
     
    
+    
+    
+   @FXML
+   private void printButton(ActionEvent e) throws IOException{
+//       FXMLLoader load = new FXMLLoader(getClass().getResource("Add.fxml"));
+//       Parent printe = load.load();
+//       Stage add_stage = (Stage)((Node) e.getSource()).getScene().getWindow();
+       
+    
+//     gothram.appendText("Gothram:");
+//       print(gothram);   
+//       
+   }
    
+   
+  
             
     
     @Override
@@ -198,12 +215,11 @@ public class AddController implements Initializable {
         add.setContentText("Voter added successfully");
         add.showAndWait();
         
-        name.setText(""); surname.setText(""); gothram.setText("");fathername.setText("");mothername.setText("");child_male1.setText("");child_male2.setText("");child_female1.setText("");child_female2.setText("");
-                             newspaper.setText("");profession.setText("");mobile.setText("");landline.setText("");receiptno.setText("");p_receiptno.setText("");municipalward.setText("");add_name.setText("");door_no.setText("");street.setText("");landmark.setText("");
-                             h_chk.setText("");r_chk.setText("");a_chk.setText("");v_chk.setText("");g_chk.setText("");t_chk.setText("");b_chk.setText("");
+                name.setText(""); surname.setText(""); gothram.setText("");fathername.setText("");mothername.setText("");child_male1.setText("");child_male2.setText("");child_female1.setText("");child_female2.setText("");
+                newspaper.setText("");profession.setText("");mobile.setText("");landline.setText("");receiptno.setText("");p_receiptno.setText("");municipalward.setText("");add_name.setText("");door_no.setText("");street.setText("");landmark.setText("");
                 house_yes.setSelected(false);house_no.setSelected(false);aadhar_yes.setSelected(false);aadhar_no.setSelected(false);
-                             voter_yes.setSelected(false);voter_no.setSelected(false);ration_yes.setSelected(false);ration_no.setSelected(false);
-                             gas_yes.setSelected(false);gas_no.setSelected(false);tap_yes.setSelected(false);tap_no.setSelected(false);bank_acc_yes.setSelected(false);bank_acc_no.setSelected(false);
+                voter_yes.setSelected(false);voter_no.setSelected(false);ration_yes.setSelected(false);ration_no.setSelected(false);
+                gas_yes.setSelected(false);gas_no.setSelected(false);tap_yes.setSelected(false);tap_no.setSelected(false);bank_acc_yes.setSelected(false);bank_acc_no.setSelected(false);
                              
         
     }

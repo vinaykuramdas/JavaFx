@@ -52,10 +52,10 @@ public class DeleteController implements Initializable {
             
             if(res.get().equals(ButtonType.OK)){
                 try{
-                 VoterDAO.deleteVoterWithId(id.getText());
+                VoterDAO.deleteVoterWithId(id.getText());
                  id.setText("");
                     
-            result.setText("The person with"+  id.getText()  +"is deleted successfully.");  
+            result.setText("The person with"+" "+  id.getText()  +" "+"is deleted successfully.");  
                 }catch(Exception ex){
                     ex.printStackTrace();
             }

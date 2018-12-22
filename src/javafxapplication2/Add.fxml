@@ -102,5 +102,6 @@
             <Font size="14.0" />
          </font>
       </Button>
+      <Button layoutX="350.0" layoutY="570.0" mnemonicParsing="false" onAction="#printButton" style="-fx-background-color: blue; font-color: white;" text="PRINT" textFill="WHITE" />
    </children>
 </AnchorPane>
